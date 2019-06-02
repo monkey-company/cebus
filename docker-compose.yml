@@ -1,0 +1,20 @@
+cebus:
+  image: monkeycompany/cebus:latest
+  ports:
+    - '80:80'
+    - '443:443'
+  environment:
+    DOMAINS: 'example.com'
+    EMAIL: 'admin@example.com'
+    PAGESPEED: 'true'
+    LIBMOD: 're2c'
+    APAMOD: 'cache,rewrite,ssl,headers'
+    APDMOD: 'autoindex'
+    PHPMOD: 'bcmath,bz2,intl,gd,mbstring,mysql,zip'
+    PEAMOD: 'xdiff'
+
+  volumes:
+    - ${PWD}/path/letsencrypt-conf/:/etc/letsencrypt/
+    - ${PWD}/path/apache-conf/:/etc/apache2/
+    - ${PWD}/path/php-conf/:/etc/php/
+    - ${PWD}/path/www/:/var/www/html/

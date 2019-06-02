@@ -1,0 +1,13 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+- mkdir -p ${PWD}/path/letsencrypt-conf/
+- mkdir -p ${PWD}/path/apache-conf/
+- mkdir -p ${PWD}/path/php-conf/
+- mkdir -p ${PWD}/path/www/
+
+script:
+- docker-compose up -d
