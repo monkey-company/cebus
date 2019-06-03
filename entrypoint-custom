@@ -23,13 +23,6 @@ then
       apt-get install $libel -y
   done
 
-  #install php mods
-  IFS=',' read -r -a phparr <<< "$PHPMOD"
-  for phpel in "${phparr[@]}"
-  do
-      apt-get install php-$phpel -y
-  done
-
   sh /scripts/before-pecl.sh
 
   #update pecl repository
