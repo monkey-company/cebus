@@ -47,7 +47,7 @@ RUN apt-get install apache2 -y && \
     ./configure $PHPCNF && \
 
     #compilation
-    make && sudo make install && \
+    make && make install && \
 
     #install additional packages for php
     apt-get install php-dev php-pear libapache2-mod-php -y && \
