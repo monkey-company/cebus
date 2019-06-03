@@ -14,7 +14,7 @@ ENV DEBIAN_FRONTEND="noninteractive" \
     PHPMOD="bcmath,bz2,intl,gd,mbstring,mysql,zip" \
     PEAMOD="xdiff-beta,parallel-beta" \
     PHPVER="7.2.19" \
-    PHPCNF="--prefix=/etc/php7 --with-bz2 --with-zlib --enable-zip --disable-cgi --enable-soap --enable-intl --with-openssl --with-readline --with-curl --enable-ftp --enable-mysqlnd --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd --enable-sockets --enable-pcntl --with-pspell --with-enchant --with-gettext --with-gd --enable-exif --with-jpeg-dir --with-png-dir --with-freetype-dir --with-xsl --enable-bcmath --enable-mbstring --enable-calendar --enable-simplexml --enable-json --enable-hash --enable-session --enable-xml --enable-wddx --enable-opcache --with-pcre-regex --with-config-file-path=/etc/php7/cli --with-config-file-scan-dir=/etc/php7/etc --enable-cli --enable-maintainer-zts --with-tsrm-pthreads --enable-debug --enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data"
+    PHPCNF="--prefix=/etc/php7 --without-pear --with-bz2 --with-zlib --enable-zip --disable-cgi --enable-soap --enable-intl --with-openssl --with-readline --with-curl --enable-ftp --enable-mysqlnd --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd --enable-sockets --enable-pcntl --with-pspell --with-enchant --with-gettext --with-gd --enable-exif --with-jpeg-dir --with-png-dir --with-freetype-dir --with-xsl --enable-bcmath --enable-mbstring --enable-calendar --enable-simplexml --enable-json --enable-hash --enable-session --enable-xml --enable-wddx --enable-opcache --with-pcre-regex --with-config-file-path=/etc/php7/cli --with-config-file-scan-dir=/etc/php7/etc --enable-cli --enable-maintainer-zts --with-tsrm-pthreads --enable-debug --enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data"
 
 WORKDIR /
 
